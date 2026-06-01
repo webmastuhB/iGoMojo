@@ -1,0 +1,528 @@
+:root {
+    --mojo-red: #bf302b;
+    --mojo-redBG: #bf4131;
+    --mojo-gold: #d3a12f;
+    --mojo-blue: #25495a;
+    --mojo-ink: #162f3c;
+    --mojo-cream: #f7f0df;
+    --mojo-paper: #fff9ec;
+    --mojo-muted: #5e6464;
+    --mojo-line: #e9dbc6;
+}
+
+.--color-mojo-blue {
+    color: var(--mojo-blue) !important;
+}
+.--bgcolor-mojo-blue {
+    background-color: var(--mojo-blue) !important;
+}
+
+.--color-mojo-gold {
+    color: var(--mojo-gold) !important;
+}
+.--bgcolor-mojo-gold {
+    background-color: var(--mojo-gold) !important;
+}
+
+.--color-mojo-red {
+    color: var(--mojo-red) !important;
+}
+.--bgcolor-mojo-red {
+    background-color: var(--mojo-red) !important;
+}
+.--bgcolor-mojo-redBG {
+    background-color: var(--mojo-redBG) !important;
+}
+
+
+.--color-mojo-cream {
+    color: var(--mojo-cream) !important;
+}
+.--bgcolor-mojo-cream {
+    background-color: var(--mojo-cream) !important;
+}
+
+
+html {
+    font-size: 14px;
+    background-color: #fbf1e2;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  
+}
+
+body {
+    background-color: #fbf1e2;
+    font-family: "Roboto";
+}
+
+#iGoMojoLogo {
+    width: 250px;
+}
+
+.font-display {
+    font-family: "Roboto Slab", Georgia, serif;
+}
+
+.text-red {
+    color: var(--mojo-red);
+}
+
+.text-gold {
+    color: var(--mojo-gold);
+}
+
+.text-blue {
+    color: var(--mojo-blue);
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+/*********************************************************************************************************************/
+/**/
+/* Panel1 */
+/**/
+
+.btn-mojo {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--mojo-red);
+    --bs-btn-border-color: var(--mojo-red);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #a92724;
+    --bs-btn-hover-border-color: #a92724;
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .82rem 1.55rem;
+}
+
+.btn-outline-mojo {
+    --bs-btn-color: var(--mojo-blue);
+    --bs-btn-border-color: var(--mojo-blue);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--mojo-blue);
+    --bs-btn-hover-border-color: var(--mojo-blue);
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .82rem 1.55rem;
+    background: rgba(255,255,255,.35);
+}
+
+.btn-mojo,
+.btn-outline-mojo {
+    padding: 0.55rem 1rem;
+    font-size: 0.95rem;
+}
+
+.hero-title {
+    font-size: clamp(2.9rem, 7vw, 1.85rem);
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+
+.hero-panel {
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+    /*background-color: pink;*/
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+#CurveyBlock {
+    position: relative;
+    width: 950px;
+    height: 377px;
+}
+
+#Curvey {
+    position: absolute;
+}
+
+#CurveyBG {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.slideshow {
+    position: relative;
+    width: 614px;
+    height: 339px;
+    overflow: hidden;
+}
+
+    .slideshow img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1.5s ease-in-out;
+    }
+
+#imageA {
+    opacity: 1;
+}
+
+#imageB {
+    opacity: 0;
+}
+
+#Pan1Row {
+/*    width: 100%;
+    height: 100%;*/
+    min-height: 377px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    /*background-color: aliceblue;*/
+}
+
+#Pan1Block {
+    position: relative;
+}
+
+#Pan1Left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#Pan1Right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*******************************************************************************************************/
+/**/
+/* Panel 2*/
+/**/
+
+#Pan2 {
+    display: grid;
+    grid-template-columns: 25% repeat(4, 18.75%);
+    align-items: start;
+}
+
+.Pan2-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 20px;
+    color: var(--mojo-blue);
+}
+
+.Pan2-icon {
+    min-width: 0;
+    border-left: 1px solid var(--mojo-line);
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+
+.icon-block {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.icon-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: var(--mojo-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--mojo-cream);
+    flex-shrink: 0;
+}
+
+.icon-title {
+    font-weight: bold;
+    padding-left: .8rem;
+}
+
+.icon-text {
+    padding-bottom: .8rem;
+    padding-right: 20px;
+}
+
+.icon-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+    .icon-link:hover {
+        background-color: #fbfaf8;
+    }
+
+    .icon-link i {
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+    }
+
+
+.brain-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--mojo-cream);
+    fill: currentColor;
+}
+
+/****************************************************/
+/**/
+/**/
+/**/
+#Panel3 {
+    margin-top: 30px;
+}
+
+#Pan3RowContainer {
+    position: relative;
+}
+
+#Pan3Row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background-color: #f3e2c8;*/
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 16.5%) 33%;
+    align-items: start;
+    z-index: 100;
+    background: none;
+}
+
+#Pan3RowBG {
+    background-color: #f3e2c8;
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    border-radius: 15px;
+}
+
+.--Pan3-LargeText {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-top: 8px;
+}
+
+.--Pan3-SmallText {
+    font-size: .8rem;
+}
+
+.Pan3-icon {
+    padding: 1rem;
+    /*background-color: #f3e2c8;*/
+}
+
+.--Pan3-icon-circle {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+#Pan3-right {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/panel3curve.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%;
+
+    display: flex;
+}
+
+#Pan3-right-left {
+    padding: 1rem;
+    padding-right: 1rem;
+}
+
+#Pan3-Quote {
+    width: 90%;
+}
+
+#Pan3-right-right {
+    font-family: "Roboto Slab", Georgia, serif;
+    line-height: 1.1rem;
+    color: white;
+    width: 200px;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+#Pan3-right-right-text {
+    font-family: "Roboto";
+    font-size: .8rem;
+    padding-top: 10px;
+    line-height: .8rem;
+}
+
+/****************************************************/
+/**/
+/**/
+/**/
+
+#Panel4 {
+    margin-top: 1rem;
+    background-color: var(--mojo-redBG);
+}
+
+#Pan4Row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 50% 20%
+}
+
+#Pan4RowLeft {
+    align-items: flex-start;
+}
+#Pan4RowMiddle {
+    color: var(--mojo-cream);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#Pan4RowRight {
+    justify-self: right;
+}
+
+#Pan4RowLeftIcon {
+    margin-top: 4px;
+}
+
+.--Pan4-LargeText {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.--Pan4-SmallText {
+    font-size: .8rem;
+    line-height: .8rem;
+}
+
+#Pan4-1-right {
+    padding-left: 12px;
+}
+
+
+.subscribe-box {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: 4px solid #b7432f;
+    background-color: #f8f1e3;
+    padding: 0px;
+    margin-left: -3px;
+    margin-top: 4px;
+}
+
+    .subscribe-box input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        font-size: .8rem;
+        color: #555;
+        background-color: #f8f1e3;
+    }
+
+        .subscribe-box input::placeholder {
+            color: #777;
+            opacity: 1;
+        }
+
+    .subscribe-box button {
+        width: 100px;
+        border: none;
+        border-left: 4px solid #c68d2f;
+        background-color: #d9a337;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+        .subscribe-box button:hover {
+            background-color: #c9912e;
+        }
+
+#Pan4RowMiddle {
+    display: flex;
+    justify-content: space-between;
+}
+
+    #Pan4RowMiddle a {
+        color: var(--mojo-cream);
+        text-decoration: none;
+    }
+        #Pan4RowMiddle a:hover {
+            background-color: #c3837b;
+        }
+
+.icon-circle-Pan4 {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background-color: var(--mojo-redBG);
+    border: 1px solid var(--mojo-cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--mojo-cream);
+    flex-shrink: 0;
+}
+
+#Pan4SocialIcons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/******************************************************************/
+/**/
+/**/
+/**/
+
+#Pan5 {
+    background-color: var(--mojo-blue);
+}
+
+#Pan5Row {
+    font-size: .8rem;
+    color: var(--mojo-cream);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
