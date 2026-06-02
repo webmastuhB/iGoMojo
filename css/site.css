@@ -124,7 +124,7 @@ body {
     border-radius: 999px;
     font-weight: 700;
     padding: .82rem 1.55rem;
-    background: rgba(255,255,255,.35);
+    background: rgba(255,255,255,.8);
 }
 
 .btn-mojo,
@@ -137,6 +137,14 @@ body {
     font-size: clamp(2.9rem, 7vw, 1.85rem);
     line-height: .95;
     letter-spacing: -.045em;
+    text-shadow: -2px -2px 0 var(--mojo-cream), 
+        2px -2px 0 var(--mojo-cream), 
+        -2px 2px 0 var(--mojo-cream), 
+        2px 2px 0 var(--mojo-cream), 
+        0px -2px 0 var(--mojo-cream), 
+        0px 2px 0 var(--mojo-cream), 
+        -2px 0px 0 var(--mojo-cream), 
+        2px 0px 0 var(--mojo-cream);
 }
 
 .hero-panel {
@@ -217,6 +225,132 @@ body {
     top: 0;
 }
 
+/*********************************************************************************************************************/
+/**/
+/* Panel1A */
+/**/
+
+.btn-mojo {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--mojo-red);
+    --bs-btn-border-color: var(--mojo-red);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #a92724;
+    --bs-btn-hover-border-color: #a92724;
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .82rem 1.55rem;
+}
+
+.btn-outline-mojo {
+    --bs-btn-color: var(--mojo-blue);
+    --bs-btn-border-color: var(--mojo-blue);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--mojo-blue);
+    --bs-btn-hover-border-color: var(--mojo-blue);
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .82rem 1.55rem;
+    background: rgba(255,255,255,.8);
+}
+
+.btn-mojo,
+.btn-outline-mojo {
+    padding: 0.55rem 1rem;
+    font-size: 0.95rem;
+}
+
+.hero-title {
+    font-size: clamp(2.9rem, 7vw, 1.85rem);
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-shadow: -2px -2px 0 var(--mojo-cream), 2px -2px 0 var(--mojo-cream), -2px 2px 0 var(--mojo-cream), 2px 2px 0 var(--mojo-cream), 0px -2px 0 var(--mojo-cream), 0px 2px 0 var(--mojo-cream), -2px 0px 0 var(--mojo-cream), 2px 0px 0 var(--mojo-cream);
+}
+
+.hero-panel {
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+    /*background-color: pink;*/
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+#Pan1ACurveyBlock {
+    position: relative;
+    width: 950px;
+    height: 377px;
+}
+
+#Pan1ACurvey {
+    position: absolute;
+}
+
+#Pan1ACurveyBG {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.slideshow {
+    position: relative;
+    width: 614px;
+    height: 339px;
+    overflow: hidden;
+}
+
+    .slideshow img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1.5s ease-in-out;
+    }
+
+#Pan1AimageA {
+    opacity: 1;
+}
+
+#Pan1AimageB {
+    opacity: 0;
+}
+
+#Pan1ARow {
+    /*    width: 100%;
+    height: 100%;*/
+    min-height: 377px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    /*background-color: aliceblue;*/
+}
+
+#Pan1ABlock {
+    position: relative;
+}
+
+#Pan1ALeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#Pan1ARight {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
 /*******************************************************************************************************/
 /**/
 /* Panel 2*/
@@ -265,6 +399,7 @@ body {
 .icon-title {
     font-weight: bold;
     padding-left: .8rem;
+    line-height: 1.1rem;
 }
 
 .icon-text {
@@ -299,8 +434,9 @@ body {
 
 /****************************************************/
 /**/
+/* Pan3*/
 /**/
-/**/
+
 #Panel3 {
     margin-top: 30px;
 }
@@ -340,6 +476,7 @@ body {
 
 .--Pan3-SmallText {
     font-size: .8rem;
+    line-height: .85rem;
 }
 
 .Pan3-icon {
@@ -353,13 +490,12 @@ body {
 }
 
 #Pan3-right {
-    width: 100%;
-    height: 100%;
     background-image: url('../img/Panel3Curve.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     display: flex;
+    min-height: 105px;
 }
 
 #Pan3-right-left {
@@ -387,9 +523,11 @@ body {
     line-height: .8rem;
 }
 
+
+
 /****************************************************/
 /**/
-/**/
+/* Pan4*/
 /**/
 
 #Panel4 {
@@ -480,12 +618,18 @@ body {
 #Pan4RowMiddle {
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
-    #Pan4RowMiddle a {
-        color: var(--mojo-cream);
-        text-decoration: none;
-    }
+.Pan4RowMiddleLink, .Pan4RowMiddleLinkHead {
+    margin-bottom: 6px;
+}
+
+#Pan4RowMiddle a {
+    color: var(--mojo-cream);
+    text-decoration: none;
+}
         #Pan4RowMiddle a:hover {
             background-color: #c3837b;
         }
@@ -521,7 +665,503 @@ body {
 
 #Pan5Row {
     font-size: .8rem;
+    line-height: .9rem;
     color: var(--mojo-cream);
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+#Pan5 a {
+    color: var(--mojo-cream);
+    text-decoration: none;
+}
+
+    #Pan5 a:hover {
+        background-color: #61727e;
+    }
+
+
+#BrowserSize {
+    width: 300px;
+    height: 30px;
+    background-color: pink;
+}
+
+
+/********************************************************************/
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+/* XS only: 0px - 575.98px */
+@media (max-width: 575.98px) {
+    #BrowserSize {
+        background-color: rebeccapurple;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan1A */
+    /**/
+
+    #Pan1ARow {
+        min-height: none;
+        height: 200px;
+    }
+
+    #Pan1ABlock {
+        position: relative;
+/*        overflow: hidden;*/
+        border-radius: 0px;
+/*        min-height: 320px;*/
+/*        padding-left: 30px;
+        padding-right: 30px*/
+    }
+
+    #Pan1ALeft {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        background-color: rgb(250 241 226 / 80%);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #Pan1ARight {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+
+        pointer-events: none;
+        height: 360px;  /*change this to whatever you want */
+        overflow: hidden;
+    }
+
+    #Pan1ACurveyBlock,
+    #Pan1ACurveyBG,
+    #Pan1ACurveyBG img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Pan1ACurvey {
+        height: 100%;
+        transform: translateX(-250px);
+    }
+
+    #Pan1ACurveyBG img,
+    #Pan1ACurvey {
+        /*object-fit: cover;*/
+        height: 100%;
+    }
+
+    .lead {
+        font-weight: bold;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan2 */
+    /**/
+
+    #Pan2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+    }
+
+    .Pan2-text {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    
+    
+    /********************************************************************/
+    /**/
+    /* Pan3 */
+    /**/
+    #Pan3-right {
+        display: none;
+    }
+    #Pan3Row {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        max-width: 820px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #Pan3Row .Pan3-icon:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(4) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+    #Pan3RowBG {
+        left: 2%;
+        width: 96%;
+        height: 95%;
+    }
+    /**********************************************************/
+    /**/
+    /* Pan4 */
+    /**/
+    #Pan4Row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #Pan4RowLeft {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    #Pan4RowMiddle {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowRight {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowMiddle {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .Pan4RowMiddleLink, .Pan4RowMiddleLinkHead {
+        margin-bottom: 6px;
+    }
+}
+
+/* SM only: 576px - 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #BrowserSize {
+        background-color: green;
+    }
+
+
+
+    /********************************************************************/
+    /**/
+    /* Pan3 */
+    /**/
+    #Pan3Row {
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: auto auto;
+        max-width: 820px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #Pan3Row .Pan3-icon:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(4) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+    #Pan3-right {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    #Pan3RowBG {
+        left: 2%;
+        width: 60%;
+        height: 95%;
+    }
+    #Pan3-Quote{
+        width: 24px;
+    }
+    #Pan3-right-left {
+        padding-left: .8rem;
+        padding-right: .6rem;
+    }
+
+    /**********************************************************/
+    /**/
+    /* Pan4 */
+    /**/
+    #Pan4Row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #Pan4RowLeft {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    #Pan4RowMiddle {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowRight {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowMiddle {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .Pan4RowMiddleLink, .Pan4RowMiddleLinkHead {
+        margin-bottom: 6px;
+    }
+
+}
+
+/* MD only: 768px - 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #BrowserSize {
+        background-color: darkorange;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan3 */
+    /**/
+    #Pan3Row {
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: auto auto;
+        max-width: 820px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #Pan3Row .Pan3-icon:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(4) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+    #Pan3-right {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    #Pan3RowBG {
+        left: 4%;
+        width: 60%;
+        height: 95%;
+    }
+    /**********************************************************/
+    /**/
+    /* Pan4 */
+    /**/
+    #Pan4Row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #Pan4RowLeft {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    #Pan4RowMiddle {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowRight {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #Pan4RowMiddle {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .Pan4RowMiddleLink, .Pan4RowMiddleLinkHead {
+        margin-bottom: 6px;
+    }
+}
+
+/* LG only: 992px - 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #BrowserSize {
+        background-color: blue;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan3 */
+    /**/
+    #Pan3Row {
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: auto auto;
+        max-width: 820px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #Pan3Row .Pan3-icon:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #Pan3Row .Pan3-icon:nth-child(4) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+    #Pan3-right {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    #Pan3RowBG {
+        left: 14%;
+        width: 60%;
+        height: 95%;
+    }
+
+    /**********************************************************/
+    /**/
+    /**/
+    /**/
+    #Pan4Row {
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    #Pan4RowLeft {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #Pan4RowMiddle {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #Pan4RowRight {
+        margin-top: 20px;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+/* XL only: 1200px - 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #BrowserSize {
+        background-color: red;
+    }
+}
+
+/* XXL only: 1400px and up */
+/*@media (min-width: 1400px) {
+    #BrowserSize {
+        background-color: pink;
+    }
+}*/
+
