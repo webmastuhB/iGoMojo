@@ -155,7 +155,8 @@ body {
 }
 
 .lead {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #CurveyBlock {
@@ -191,11 +192,11 @@ body {
         transition: opacity 1.5s ease-in-out;
     }
 
-#imageA {
+#Pan1imageA {
     opacity: 1;
 }
 
-#imageB {
+#Pan1imageB {
     opacity: 0;
 }
 
@@ -343,6 +344,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    overflow: hidden;
 }
 
 
@@ -711,11 +713,7 @@ body {
 
     #Pan1ABlock {
         position: relative;
-/*        overflow: hidden;*/
         border-radius: 0px;
-/*        min-height: 320px;*/
-/*        padding-left: 30px;
-        padding-right: 30px*/
     }
 
     #Pan1ALeft {
@@ -889,8 +887,104 @@ body {
     #BrowserSize {
         background-color: green;
     }
+    /********************************************************************/
+    /**/
+    /* Pan1A */
+    /**/
 
+    #Pan1ARow {
+        min-height: none;
+        height: 200px;
+    }
 
+    #Pan1ABlock {
+        position: relative;
+        border-radius: 0px;
+    }
+
+    #Pan1ALeft {
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        background-color: rgb(250 241 226 / 80%);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #Pan1ARight {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        height: 360px; /*change this to whatever you want */
+        overflow: hidden;
+    }
+
+    #Pan1ACurveyBlock,
+    #Pan1ACurveyBG,
+    #Pan1ACurveyBG img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Pan1ACurvey {
+        height: 100%;
+        transform: translateX(-250px);
+    }
+
+    #Pan1ACurveyBG img,
+    #Pan1ACurvey {
+        /*object-fit: cover;*/
+        height: 100%;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan2 */
+    /**/
+
+    #Pan2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+    }
+
+    .Pan2-text {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
 
     /********************************************************************/
     /**/
@@ -989,6 +1083,104 @@ body {
     #BrowserSize {
         background-color: darkorange;
     }
+    /********************************************************************/
+    /**/
+    /* Pan1A */
+    /**/
+
+    #Pan1ARow {
+        min-height: none;
+        height: 200px;
+    }
+
+    #Pan1ABlock {
+        position: relative;
+        border-radius: 0px;
+    }
+
+    #Pan1ALeft {
+        position: relative;
+        z-index: 2;
+        width: 70%;
+        background-color: rgb(250 241 226 / 80%);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #Pan1ARight {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        height: 400px; /*change this to whatever you want */
+        overflow: hidden;
+    }
+
+    #Pan1ACurveyBlock,
+    #Pan1ACurveyBG,
+    #Pan1ACurveyBG img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Pan1ACurvey {
+        height: 100%;
+        transform: translateX(-250px);
+    }
+
+    #Pan1ACurveyBG img,
+    #Pan1ACurvey {
+        /*object-fit: cover;*/
+        height: 100%;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /********************************************************************/
+    /**/
+    /* Pan2 */
+    /**/
+
+    #Pan2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+    }
+
+    .Pan2-text {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Pan2 .Pan2-icon:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
 
     /********************************************************************/
     /**/
@@ -1081,6 +1273,66 @@ body {
 
     /********************************************************************/
     /**/
+    /* Pan1A */
+    /**/
+
+    #Pan1ARow {
+        min-height: none;
+        height: 200px;
+    }
+
+    #Pan1ABlock {
+        position: relative;
+        border-radius: 0px;
+    }
+
+    #Pan1ALeft {
+        position: relative;
+        z-index: 2;
+        width: 60%;
+        background-color: rgb(250 241 226 / 80%);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #Pan1ARight {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        height: 384px; /*change this to whatever you want */
+        overflow: hidden;
+    }
+
+    #Pan1ACurveyBlock,
+    #Pan1ACurveyBG,
+    #Pan1ACurveyBG img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Pan1ACurvey {
+        height: 100%;
+        transform: translateX(-250px);
+    }
+
+    #Pan1ACurveyBG img,
+    #Pan1ACurvey {
+        /*object-fit: cover;*/
+        height: 100%;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /********************************************************************/
+    /**/
     /* Pan3 */
     /**/
     #Pan3Row {
@@ -1156,6 +1408,66 @@ body {
     #BrowserSize {
         background-color: red;
     }
+
+    /********************************************************************/
+    /**/
+    /* Pan1A */
+    /*
+
+    #Pan1ARow {
+        min-height: none;
+        height: 200px;
+    }
+
+    #Pan1ABlock {
+        position: relative;
+        border-radius: 0px;
+    }
+
+    #Pan1ALeft {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+        background-color: rgb(250 241 226 / 80%);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    #Pan1ARight {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        height: 380px; 
+        overflow: hidden;
+    }
+
+    #Pan1ACurveyBlock,
+    #Pan1ACurveyBG,
+    #Pan1ACurveyBG img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Pan1ACurvey {
+        height: 100%;
+        transform: translateX(-250px);
+    }
+
+    #Pan1ACurveyBG img,
+    #Pan1ACurvey {
+        height: 100%;
+    }
+*/
+    .lead {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
 }
 
 /* XXL only: 1400px and up */
